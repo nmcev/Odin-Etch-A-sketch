@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Sigmar&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-w{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 3px solid white;
+}
