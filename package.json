@@ -74,13 +74,14 @@
     "thenify-all": "^1.6.0",
     "to-regex-range": "^5.0.1",
     "ts-interface-checker": "^0.1.13",
+    "tw-elements": "^1.0.0-beta2",
     "util-deprecate": "^1.0.2",
     "wrappy": "^1.0.2",
     "yaml": "^2.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":  "tailwind -i ./src/input.css -o ./dist/output.css --watch "
+    "dev": "tailwind -i ./src/input.css -o ./dist/output.css --watch "
   },
   "author": "",
   "license": "ISC"
