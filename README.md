@@ -5,7 +5,7 @@ This project with The Odin Project journey
 ### Etch-A-sketch 
 it is look like board to draw🖌️ inside it as following picture : 
 <div align="center">
-<img src ="https://i.etsystatic.com/7440630/r/il/1d3b8a/1477167973/il_570xN.1477167973_cf4v.jpg " style = "width :400px">
+<img src ="img/etch.jpg"style = "width :400px">
 </div>
 
 ## Try and see
