@@ -22,6 +22,25 @@ window.addEventListener('DOMContentLoaded', () => {
         generateRandomColor();
     });
 
+    //pause drawing
+    let pauseBtn = document.getElementById('pause');
+    pauseBtn.addEventListener('click', function () {
+        pauseDrawing();
+    });
+
+    // resume drawing
+    let resumeBtn = document.getElementById('resume');
+    resumeBtn.addEventListener('click', function () {
+        resumeDrawing();
+    });
+
+    //black drawing 
+    let blackBtn = document.getElementById('black');
+    blackBtn.addEventListener('click', function () {
+        selectColor = "#000";
+    });
+
+
 });
 
 // To create a new board
@@ -76,4 +95,21 @@ function resetBoard() {
 function generateRandomColor() {
     const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
     selectColor = randomColor;
+}
+// Pause drawing
+function pauseDrawing() {
+    isDrawingEnabled = false;
+    let pauseBtn = document.getElementById("pause");
+    let resumeBtn = document.getElementById("resume");
+    pauseBtn.style.backgroundColor = "red";
+    resumeBtn.style.backgroundColor = "";
+}
+
+// Resume drawing
+function resumeDrawing() {
+    isDrawingEnabled = true;
+    let pauseBtn = document.getElementById("pause");
+    let resumeBtn = document.getElementById("resume");
+    pauseBtn.style.backgroundColor = "";
+    resumeBtn.style.backgroundColor = "green";
 }
