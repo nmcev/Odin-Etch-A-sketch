@@ -71,7 +71,7 @@ function getSize() {
     let userInput = prompt("Enter your board size");
     let message = document.getElementById("message");
 
-    if (userInput === "") {
+    if (userInput === "" || isNaN(userInput)) {
         message.textContent = "Please enter a number";
     } else if (userInput < 0 || userInput > 100) {
         message.textContent = "Please enter a number between 0 and 100";
