@@ -51,18 +51,17 @@ function createBoard(size) {
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-    for (let i = 0; i < size; i++) {
-        for (let j = 0; j < size; j++) {
-            let div = document.createElement("div");
+    let numberOfDiv = size * size
+    for (let i = 0; i < numberOfDiv; i++) {
 
-            div.addEventListener("mouseover", function () {
-                if (isDrawingEnabled) {
-                    div.style.backgroundColor = selectColor;
-                }
-            });
-
-            board.appendChild(div);
-        }
+        let div = document.createElement("div");
+        div.addEventListener("mouseover", function () {
+            if (isDrawingEnabled) {
+                div.style.backgroundColor = selectColor;
+            }
+        });
+        
+        board.appendChild(div);
     }
 }
 
